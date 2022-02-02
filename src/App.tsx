@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Flex } from '@chakra-ui/react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/nav/Navbar';
+import Calendar from './pages/calendar';
+import Dashboard from './pages/dashboard';
+import Settings from './pages/settings';
+import User from './pages/user';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    {/* <Flex> */}
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Dashboard />} /> 
+        <Route path='/calendar' element={<Calendar />} /> 
+        <Route path='/user' element={<User />} /> 
+        <Route path='/settings' element={<Settings />} /> 
+      
+      </Routes>
+    {/* </Flex> */}
+    </BrowserRouter>
   );
 }
 
