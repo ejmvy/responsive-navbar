@@ -1,4 +1,4 @@
-import { Flex, Icon, IconButton, Image, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import SideBar from "./SideBar";
 import { useEffect, useState } from "react";
 import icons from './NavIcons';
