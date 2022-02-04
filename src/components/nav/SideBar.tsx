@@ -1,5 +1,5 @@
 import { SettingsIcon } from "@chakra-ui/icons";
-import { Box, Button, Flex, Icon, Image, Link, Menu, MenuButton, Text } from "@chakra-ui/react";
+import { Flex, Icon, Image, Text } from "@chakra-ui/react";
 import { useState } from "react";
 // import { FaCalendarCheck} from 'react-icons/fa';
 // import { RiTimerLine } from 'react-icons/ri';
