@@ -1,4 +1,4 @@
-import { Flex, Icon, Link, Menu, MenuButton, Text } from "@chakra-ui/react";
+import { Flex, Icon, Menu, MenuButton, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 
